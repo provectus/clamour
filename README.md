@@ -159,7 +159,8 @@ Clamour.registry.change do
 end
 
 class Messaging::Blah::Do
-
+  include Clamour::Handler
+  
   # @param [Messaging::Foo::Done] message
   def on_message(message)
     # Do Something
